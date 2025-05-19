@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootWeb1Application<SpringBootWeb1>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "org.hg.SpringBootWeb1.SpringBootWeb1Application",
+            "projectName": "SpringBootWeb1",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
