@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    Create a object of Programmer class on load of application because its scope is singleton-->
+<!--    <bean id="programObj" class="org.hg.Programmer">-->
+<!--    </bean>-->
+
+<!--    Create objects only on requirement because of prototype scope-->
+    <bean id="programObj" class="org.hg.Programmer" scope="prototype">
+    </bean>
+
+    <bean id="laptopObj" class="org.hg.Laptop">
+<!--        Setter Injection -->
+<!--        <property name="brand" value="Asus" />-->
+
+<!--        Contructor Injection-->
+        <constructor-arg index="0" value="Hp" />
+        <constructor-arg index="1" ref="cpu" />
+    </bean>
+
+    <bean id="cpu" class="org.hg.CPU">
+
+    </bean>
+</beans>
