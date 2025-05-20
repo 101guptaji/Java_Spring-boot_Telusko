@@ -16,6 +16,16 @@
         <input type="submit" value="Submit">
     </form>
 
+    <form action="addStudent">
+                <label for="id">Enter Id :</label>
+                <input type="text" id="id" name="id"><br>
+                <label for="name">Enter Name :</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="standard">Enter Standard :</label>
+                <input type="text" id="standard" name="standard"><br>
+                <input type="submit" value="Submit">
+            </form>
+
     </body>
 
     </html>
